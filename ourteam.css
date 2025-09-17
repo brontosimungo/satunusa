@@ -1,0 +1,663 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f8f8f8;
+    color: #222;
+  }
+  header {
+    background: #332804;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  .logo img {
+    height: 60px;
+  }
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center
+  }
+  nav ul li {
+    margin-left: 20px;
+  }
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: #4caf50;
+    color: #fff;
+  }
+  .hero img {
+    max-width: 600px;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 10px;
+  }
+  main section {
+    padding: 40px 20px;
+    background: #fff;
+    margin: 10px auto;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  }
+  h2 {
+    color: #39738d;
+  }
+  footer {
+    background: #39738d;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+  }
+  blockquote {
+    background: #e9f4fa;
+    margin: 20px 0;
+    padding: 15px;
+    border-left: 5px solid #39738d;
+  }
+  cite {
+    display: block;
+    text-align: right;
+    font-style: italic;
+    color: #39738d;
+  }
+  .top-bar {
+    background: #996235;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 20px;
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+  }
+  .address {
+    flex: 1;
+  }
+  .social {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .social a img {
+    width: 22px;
+    height: 22px;
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+  .contact-info {
+    margin-left: 12px;
+    font-size: 14px;
+    color: #e0e0e0;
+  }
+  @media (max-width: 600px) {
+    .top-bar {
+      flex-direction: column;
+      text-align: center;
+      padding: 10px 5px;
+    }
+    .address, .contact-info {
+      margin-bottom: 4px;
+    }
+  }
+  .btn-more-info {
+    display: inline-block;
+    background-color: #39738d;  /* Warna khas biru tua */
+    color: white;
+    padding: 12px 18px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    font-family: Arial, sans-serif;
+    margin-left: 15px;
+  }
+  
+  .btn-more-info .arrow {
+    margin-left: 8px;
+    font-size: 18px;
+    vertical-align: middle;
+    transition: margin-left 0.3s ease;
+  }
+  
+  .btn-more-info:hover {
+    background-color: #2f5a67;
+  }
+  
+  .btn-more-info:hover .arrow {
+    margin-left: 12px;
+  }
+  .icon-maps {
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+    margin-right: 6px;
+  }  
+  .content-section {
+    display: flex;
+    align-items: center; /* Vertikal align tengah */
+    gap: 30px; /* Jarak antara teks dan gambar */
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #e9c835;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+  
+  .text-content {
+    flex: 1;
+    font-family: Arial, sans-serif;
+    color: #222;
+  }
+  
+  .text-content h2 {
+    color: #39738d;
+    margin-bottom: 15px;
+  }
+  
+  .text-content h3 {
+    margin-top: 25px;
+    color: #39738d;
+  }
+  
+  .text-content p {
+    line-height: 1.6;
+    margin-bottom: 18px;
+  }
+  
+  .image-content {
+    flex: 1;
+  }
+  
+  .image-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    max-height: 400px;  /* Atur sesuai kebutuhan, sama tinggi dengan teks */
+  }
+  .section-title {
+    text-align: center;
+    font-size: 28px;
+    color: #39738d;
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-family: 'Arial', sans-serif;
+  }
+  .subtitle-center {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+    color: #39738d;
+    margin-bottom: 15px;
+    font-family: Arial, sans-serif;
+  }      
+  .cta-bar {
+    background: #ffd12b;
+    padding: 30px 0 18px 0;
+  }
+  .cta-container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 1000px;
+    margin: 0 auto 15px auto;
+  }
+  .team-section {
+    background: #fff;
+    padding: 14px 14px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    width: 340px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  }
+  .team-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-right: 15px;
+  }
+  .team-text h3 {
+    margin: 0 0 6px 0;
+    color: #39738d;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .team-text p {
+    margin: 0;
+    font-size: 16px;
+    color: #2c3e50;
+  }
+  .maps-section {
+    width: 400px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    overflow: hidden;
+  }
+  .social-bar {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    margin-top: 13px;
+  }
+  .social-icon img {
+    width: 34px;
+    height: 34px;
+    transition: transform 0.2s;
+  }
+  .social-icon:hover img {
+    transform: scale(1.07);
+  }
+  .call-to-action {
+    margin-top: 16px;
+    text-align: center;
+  }
+  .cta-btn {
+    display: inline-block;
+    background: #39738d;
+    color: #fff;
+    padding: 13px 34px;
+    border-radius: 24px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.2s;
+  }
+  .cta-btn:hover {
+    background: #2f5a67;
+  }
+  
+  /* Responsif tablet/hp */
+  @media (max-width: 900px) {
+    .cta-container {
+      flex-direction: column;
+      align-items: center;
+      gap: 18px;
+    }
+    .maps-section, .team-section {
+      width: 90vw;
+      max-width: 400px;
+    }
+  }
+/* CSS Umum untuk Index.html sudah ada ... */
+
+/* Tambahan CSS untuk About Us */
+
+.about-container {
+    max-width: 900px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  
+  .about-container h1 {
+    text-align: center;
+    color: #39738d;
+    margin-bottom: 30px;
+  }
+  
+  .about-section {
+    margin-bottom: 30px;
+  }
+  
+  .about-section h2 {
+    color: #39738d;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    font-size: 22px;
+    border-bottom: 2px solid #39738d;
+    padding-bottom: 6px;
+  }
+  
+  .about-section p {
+    text-align: justify;
+  }
+  
+  .about-section ul {
+    list-style: disc inside;
+    padding-left: 20px;
+  }
+  
+  .about-section ul li {
+    margin-bottom: 8px;
+    font-size: 16px;
+  }
+  
+  /* Pastikan style header dan nav sudah ada di style.css yang dipakai oleh index.html */
+  
+  /* Contoh style nav menu active */
+  .nav-menu a.active {
+    background-color: #2f5a67;
+    color: #fff;
+  }
+  .main-footer {
+    background: #ffffff;
+    border-top: 4px solid #ffd12b;
+    color: #402d21;
+    padding: 36px 10px 24px 10px;
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+  }
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 960px;
+    margin: 0 auto;
+    gap: 44px;
+    align-items: flex-start;
+  }
+  .footer-col {
+    flex: 1 1 200px;
+    min-width: 200px;
+    margin-bottom: 22px;
+  }
+  .footer-logo img {
+    width: 92px;
+    height: 92px;
+    border-radius: 60px;
+  }
+  .footer-about {
+    font-size: 11px;
+    line-height: 1.6;
+  }
+  .footer-contact,
+  .footer-links,
+  .footer-newsletter {
+    font-size: 15.5px;
+    line-height: 1;
+    color: #402d21;
+  }
+  .footer-contact strong,
+  .footer-links strong,
+  .footer-newsletter strong {
+    font-size: 17px;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 8px;
+  }
+  .footer-links a {
+    color: #39738d;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .footer-links a:hover {
+    text-decoration: underline;
+    color: #2f5a67;
+  }
+  @media (max-width: 980px) {
+    .footer-container {
+      flex-direction: column;
+      gap: 0;
+      align-items: flex-start;
+    }
+    .footer-col {
+      margin-bottom: 22px;
+    }
+  }
+  .our-team {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 0 15px;
+  }
+  
+  .our-team h2 {
+    text-align: center;
+    color: #39738d;
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+  
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+  
+  .team-member {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    text-align: center;
+  }
+  
+  .team-member img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 3px solid #39738d;
+  }
+  
+  .team-member h3 {
+    font-size: 15px;
+    color: #333;
+    margin: 0;
+    font-weight: 600;
+  }
+  .team-member h3 p {
+    font-size: 12px;
+    color: #333;
+    margin: 0;
+    font-weight: 600;
+  }
+  
+  /* Responsif */
+  @media (max-width: 900px) {
+    .team-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .team-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  .call-to-action {
+    margin-top: 16px;
+    text-align: center;
+  }
+  .cta-btn {
+    display: inline-block;
+    background: #39738d;
+    color: #fff;
+    padding: 13px 34px;
+    border-radius: 24px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.2s;
+  }
+  .cta-btn:hover {
+    background: #2f5a67;
+  }
+  
+  /* Responsif tablet/hp */
+  @media (max-width: 900px) {
+    .cta-container {
+      flex-direction: column;
+      align-items: center;
+      gap: 18px;
+    }
+    .maps-section, .team-section {
+      width: 90vw;
+      max-width: 400px;
+    }
+  }
+  .cta-btn {
+    display: inline-block;
+    background: #39738d;
+    color: #fff;
+    padding: 13px 34px;
+    border-radius: 24px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.2s;
+  }
+  .cta-btn:hover {
+    background: #2f5a67;
+  }
+  .cta-split {
+    display: flex;
+    align-items: stretch;
+    background: #ffd12b;
+    min-height: 360px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.09);
+  }
+  
+  .cta-left {
+    flex: 1.3;
+    padding: 48px 32px 32px 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .cta-top {
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-size: 17px;
+    color: #563d24;
+    margin-bottom: 18px;
+    font-weight: 600;
+    opacity: 0.85;
+  }
+  
+  .cta-title {
+    font-size: 3em;
+    font-family: 'Georgia', serif;
+    margin: 0 0 18px 0;
+    color: #412d1d;
+    font-weight: 700;
+    line-height: 1.05;
+  }
+  
+  .cta-desc {
+    font-size: 1.16em;
+    margin-bottom: 38px;
+    color: #412d1d;
+    font-weight: 400;
+    opacity: 0.85;
+  }
+  
+  .cta-btn {
+    background: #402d21;
+    color: #fff;
+    font-size: 1.13em;
+    font-weight: bold;
+    border-radius: 28px;
+    padding: 14px 32px;
+    width: 180px;
+    text-align: center;
+    text-decoration: none;
+    align-self: flex-start;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.13);
+    transition: background 0.2s;
+  }
+  .cta-btn:hover {
+    background: #533624;
+  }
+  
+  .cta-right {
+    flex: 1;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .cta-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    min-height: 300px;
+    max-height: 390px;
+    border: none;
+    border-radius: 0;
+  }
+  
+  /* Responsif untuk perangkat kecil */
+  @media (max-width:880px) {
+    .cta-split {
+      flex-direction: column;
+      min-height: unset;
+    }
+    .cta-left {
+      padding: 38px 18px 18px 18px;
+      text-align: center;
+      align-items: center;
+      justify-content: flex-start;
+    }
+    .cta-right img {
+      min-height: 160px;
+      height: auto;
+      border-radius: 0 0 12px 12px;
+    }
+  }  
+  .top-bar {
+    background: #996235;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 20px;
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+  }
+  .address {
+    flex: 1;
+  }
+  .social {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .social a img {
+    width: 22px;
+    height: 22px;
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+  .contact-info {
+    margin-left: 12px;
+    font-size: 14px;
+    color: #e0e0e0;
+  }
+  @media (max-width: 600px) {
+    .top-bar {
+      flex-direction: column;
+      text-align: center;
+      padding: 10px 5px;
+    }
+    .address, .contact-info {
+      margin-bottom: 4px;
+    }
+  }
+       
