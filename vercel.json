@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "routes": [
+    { "src": "/", "dest": "/index.html" },
+    { "src": "/about", "dest": "/about.html" },
+    { "src": "/contact", "dest": "/contact.html" },
+    { "src": "/program", "dest": "/program.html" },
+    { "src": "/typeroom", "dest": "/type-room.html" },
+    { "src": "/ourteam", "dest": "/ourteam.html" },
+    { "src": "/(.*)", "dest": "/$1" }
+  ]
+}
